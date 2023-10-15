@@ -1,13 +1,14 @@
 {
   "name": "two",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
+    "dev": "vite",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "npx playwright test --reporter=list --project=chromium --headed"
   },
   "dependencies": {
     "react": "^18.2.0",
